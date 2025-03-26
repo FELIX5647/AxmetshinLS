@@ -394,7 +394,7 @@ namespace AxmetshinLS
             || x.Email.ToLower().Contains(TBSearch.Text.ToLower())
             || x.Phone.Replace("-","").Replace("(","").Replace(")","").Replace(" ", "").Contains(TBSearch.Text.Replace("-", "").Replace("(", "").Replace(")", "").Replace(" ",""))
             ).ToList();
-            ListClient.ItemsSource = currentServices.ToList();
+            ListClient.ItemsSource = currentServices.ToList(); 
             ListClient.ItemsSource = currentServices;
             TableList = currentServices;
             CountRecords = TableList.Count;
