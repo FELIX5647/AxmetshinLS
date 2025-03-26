@@ -376,7 +376,7 @@ namespace AxmetshinLS
                 currentServices = currentServices.OrderBy(p => p.FirstName).ToList();
 
             }
-            if (SortCB.SelectedIndex == 2)
+            if (SortCB.SelectedIndex == 2) 
             {
                 currentServices = currentServices.OrderByDescending(p => p.ClientService.DefaultIfEmpty().Max(s => s?.StartTime ?? DateTime.MinValue)).ToList();
 
